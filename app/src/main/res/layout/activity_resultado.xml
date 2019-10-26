@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Resultados" />
+
+    <Button
+        android:id="@+id/resultsBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Mostrar resultados" />
+
+    <TextView
+        android:id="@+id/sexText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultsBt"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/resultsBt"
+        android:layout_toLeftOf="@+id/resultsBt"
+        android:text="Sexo:" />
+
+
+    <TextView
+        android:id="@+id/carneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexText"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/resultsBt"
+        android:layout_toLeftOf="@+id/resultsBt"
+        android:text="Carne:" />
+
+    <TextView
+        android:id="@+id/verdurasText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carneText"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/resultsBt"
+        android:layout_toLeftOf="@+id/resultsBt"
+        android:text="Verduras:" />
+
+    <TextView
+        android:id="@+id/pescadoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verdurasText"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/resultsBt"
+        android:layout_toLeftOf="@+id/resultsBt"
+        android:text="Pescado:" />
+
+    <TextView
+        android:id="@+id/sexValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultsBt"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/resultsBt"
+        android:layout_toRightOf="@+id/resultsBt"
+        android:layout_alignBaseline="@id/sexText"/>
+
+    <ImageView
+        android:id="@+id/carneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexValue"
+        android:layout_alignTop="@id/carneText"
+        android:layout_toEndOf="@id/resultsBt"
+        android:layout_toRightOf="@id/resultsBt" />
+
+    <ImageView
+        android:id="@+id/verdurasValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carneValue"
+        android:layout_alignTop="@id/verdurasText"
+        android:layout_toEndOf="@id/resultsBt"
+        android:layout_toRightOf="@id/resultsBt" />
+
+    <ImageView
+        android:id="@+id/pescadoValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verdurasValue"
+        android:layout_alignTop="@id/pescadoText"
+        android:layout_toEndOf="@id/resultsBt"
+        android:layout_toRightOf="@id/resultsBt" />
+
+</RelativeLayout>

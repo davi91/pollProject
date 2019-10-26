@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="0.5"
+            android:gravity="center|center_vertical"
+            android:text="Sexo:" />
+
+        <RadioGroup
+            android:id="@+id/sexCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mujerBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSexClick"
+                android:layout_weight="1"
+                android:text="Mujer" />
+
+            <RadioButton
+                android:id="@+id/hombreBtton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSexClick"
+                android:layout_weight="1"
+                android:text="Hombre" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comida Favorita:" />
+
+        <CheckBox
+            android:id="@+id/carneCh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onFoodClick"
+            android:text="Carne" />
+
+        <CheckBox
+            android:id="@+id/verdurasCh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onFoodClick"
+            android:text="Verduras" />
+
+        <CheckBox
+            android:id="@+id/pesacdoCh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onFoodClick"
+            android:text="Pescado" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/nextPageBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="onNextPage"
+        android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+</android.widget.LinearLayout>
